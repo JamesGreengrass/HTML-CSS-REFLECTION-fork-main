@@ -1,0 +1,332 @@
+// Imports
+
+@import 'mixins.scss',
+        'variables.scss';
+
+/* ================================= 
+            Header Styles
+==================================== */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    @include mQ(768px) {
+      width: 100%;
+    }
+    @include mQ(992px) {
+      width: 100%;
+    }
+    @include mQ(1260px) {
+      width: 100%;
+    }
+}
+  
+.mob-search-container {
+    margin: 11px 33px 21px 33px;
+    @include mQ(768px) {
+      display: none;
+    }
+}
+
+#logo-a {
+    margin-right: 111px;
+    @include mQ(768px) {
+      margin-right: 58px;
+    }
+}
+
+.logo {
+    max-width: 100%;
+    display: block;
+}
+  
+.btn-s, .btn-c {
+    display: none;
+    @include mQ(992px) {
+      display: flex;
+    }
+}
+  
+.btn-s {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+    line-height: 46px;
+}
+  
+.btn-c {
+    background-color: $grey;
+    border-color: $grey;
+    color: $white;
+    line-height: 46px;
+    margin: 0px 20px;
+}
+
+.btn-s:hover {
+    color: $white;
+    background-color: $dblue;
+    border-color: $dblue;
+}
+  
+.btn-c:hover {
+    color: $white;
+    background-color: #84858F;
+    border-color: #84858F;
+}
+  
+.search-bar-input {
+    font-size: 14px;
+    color: #555;
+}
+  
+.search-bar-input {
+    background-color: $white;
+    background-image: none;
+    border: 1px solid #e5e5e5;
+    box-shadow: inset 0 1px 1px #00000013;
+}
+  
+.search-bar-input {
+    padding: 15px 5px;
+    border-color: $lgrey;
+    height: 56px;
+    @include mQ(768px) {
+      border-radius: 0px;
+      width: 174px;
+    }
+    @include mQ(992px) {
+      display: none;
+      width: 300px;
+    }
+    @include mQ(1260px) {
+      display: flex;
+      width: 240px;
+      border-radius: 0px;
+    }
+}
+  
+.search-bar-button {
+    outline: none;
+    padding: 7px 20px 3px;
+    height: 56px;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    border: none;
+    vertical-align: bottom;
+    background-color: $grey;
+    color: $white;
+}
+  
+.search-bar-button:hover {
+    background-color: #7E808A;
+    border-color: #7E808A;
+}
+  
+.icon-mouse, .icon-paperplane {
+    margin-right: 5px;
+    font-size: 1.438rem;
+    line-height: 45px;
+}
+  
+.search-bar {
+    display: none;
+    @include mQ(768px) {
+      display: flex;
+    }
+}
+  
+#icon-phone:link {
+    text-decoration: none;
+}
+  
+#icon-phone:visited {
+    text-decoration: none;
+}
+  
+#icon-phone:hover {
+    color: #121419;
+    text-decoration: underline;
+}
+  
+#icon-phone:active {
+    text-decoration: none;
+}
+  
+.container .icon-phone_in_talk {
+    font-size: 2rem;
+    color: #121419;
+    margin-left: 15px;
+    @include mQ(768px) {
+      display: none;
+    }
+}
+  
+.item-menu {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: normal;
+    height: 56px;
+    color: $white;
+    background-color: $bgcolorprimary;
+    border-color: $bgcolorprimary;
+    margin-left: 20px;
+}
+  
+.item-menu:hover {
+    background-color: #22242E;
+    border-color: #22242E;
+}
+  
+.btn-primary {
+    color: $white;
+    background-color: $bgcolorprimary;
+    border-color: $bgcolorprimary;
+}
+  
+.btn-primary:hover {
+    color: $white;
+    background-color: $dprimary;
+    border-color: $dprimary;
+}
+  
+.hamburger {
+    padding: 15px;
+    display: inline-block;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0 0 0 20px;
+    overflow: visible;
+}
+  
+.btn.hamburger.btn-primary {
+    color: $white;
+    background-color: $bgcolorprimary;
+    border-color: $bgcolorprimary;
+}
+  
+.btn.hamburger.btn-primary:hover {
+    color: $white;
+    background-color: #22242E;
+    border-color: #22242E;
+}
+  
+.hamburger-box {
+    width: 33px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+}
+  
+.btn.hamburger .hamburger-box {
+    display: block;
+    position: relative;
+    top: -3px;
+    left: 1px;
+}
+  
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -1.5px;
+}
+  
+.hamburger-inner, .hamburger-inner:after,
+.hamburger-inner:before {
+    width: 33px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 0px;
+    position: absolute;
+}
+  
+.hamburger-inner:after, 
+.hamburger-inner:before {
+    content: "";
+    display: block;
+}
+  
+.hamburger-inner:before {
+    top: -8px;
+}
+  
+.hamburger-inner:after {
+    bottom: -8px;
+}
+  
+.btn.hamburger .hamburger-box .hamburger-inner, 
+.btn.hamburger .hamburger-box .hamburger-inner:after, 
+.btn.hamburger .hamburger-box .hamburger-inner:before {
+    background-color: $white;
+    border-radius: 0;
+}
+  
+.btn.hamburger .title {
+    display: block;
+    font-size: .75rem;
+    line-height: 1;
+    position: relative;
+    top: 5px;
+    margin-bottom: 0;
+}
+  
+.title {
+    display: block;
+    font-size: .75rem;
+    line-height: 1;
+    position: bottom;
+    top: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+  
+.mob-search-bar-form-control, output {
+    font-size: 14px;
+    color: #555;
+}
+  
+.mob-search-bar-form-control {
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px #00000014;
+    height: 47px;
+    padding: 5px 15px;
+}
+  
+.mob-search-bar-form-control {
+    border-color: #ccc;
+}
+  
+.mob-search-bar-form {
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: 1px solid hsla(0, 0%, 100%, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding-right: 40px;
+    width: 100%;
+}
+  
+.mob-search-button {
+    background: none;
+    border: none;
+    color: #333645;
+    position: absolute;
+    right: 40px;
+    line-height: 47px;
+    outline: none;
+}
+  
+.icon-magnifying-glass {
+    font-size: 25px;
+    vertical-align: middle;
+}

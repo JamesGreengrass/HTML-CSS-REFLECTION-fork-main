@@ -1,0 +1,104 @@
+// Imports
+
+@import 'mixins.scss',
+        'variables.scss';
+
+/* ================================= 
+            Clients Small Styles
+==================================== */
+.sc-logos {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .sc-logos {
+        display: block;
+    }
+
+    .small-client-flex {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .sc-item {
+        flex-grow: 1;
+        vertical-align: middle;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .sc-item .description {
+        display: none;
+        position: absolute;
+        bottom: 172%;
+        left: -200px;
+        right: -200px;
+    }
+
+    .sc-item:hover .description {
+        display: block;
+    }
+
+    .sc-item .description .box {
+        background-color: $bgcolorprimary;
+        color: $white;
+        padding: 20px;
+        font-size: .875rem;
+        max-width: 260px;
+        margin: 0 auto 5px;
+    }
+
+    .sc-item .description .box .arrow {
+        position: absolute;
+        bottom: -30px;
+        left: 44%;
+        margin-left: -36px;
+    }
+
+    .sc-item .description .box h3 {
+        font-weight: 400;
+        position: relative;
+        font-size: 1.125rem;
+        color: $white;
+        padding-bottom: 17px;
+        margin: 0 0 11px;
+    }
+
+    .sc-item .description .box h3:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 28px;
+        height: 3px;
+        display: block;
+        background-color: $white;
+    }
+
+    .sc-item .description .box p {
+        font-size: .8125rem;
+        line-height: 1.375rem;
+        margin-bottom: 0;
+    }
+
+    .sc-item .description .box .arrow {
+        content: "";
+        margin: auto;
+        display: inline-block;
+        border-color: $bgcolorprimary transparent transparent;
+        border-style: solid;
+        border-width: 35px 36px 0;
+    }
+
+    .sc-item img {
+        max-width: 100%;
+        height: auto;
+        filter: grayscale(100%);
+    }
+
+    .sc-item:hover img {
+        filter: grayscale(0);
+    }
+}

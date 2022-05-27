@@ -1,0 +1,166 @@
+// Imports
+
+@import 'mixins.scss',
+        'variables.scss';
+
+/* ================================= 
+            Footer Styles
+==================================== */
+
+footer {
+    display: block;
+    background-color: $bgcolorprimary;
+    color: $white;
+    padding: 47px 0 43px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-row .services,
+.footer-row .offices {
+    display: flex;
+    justify-content: space-between;
+    @include mQMax(1259px) {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    @include mQMax(767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.footer-row .services .service,
+.footer-row .offices .office {
+    width: 225px;
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 26px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+footer ul li {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mQ(768px) {
+      width: 750px;
+    }
+    @include mQ(992px) {
+      width: 970px;
+    }
+    @include mQ(1260px) {
+      width: 1200px;
+    }
+}
+
+.footer-container:before, 
+.footer-container:after {
+    display: table;
+}
+
+.footer-container:after {
+    clear: both;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #888;
+    font-size: .8125rem;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+footer .bottom .license {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    display: flex;
+    padding-top: 5px;
+}
+
+.visible-xs {
+    display: none!important;
+    @include mQMax (767px) {
+        display: block!important;
+    }
+}
+
+footer .bottom .license span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: $white;
+}
+
+footer .bottom .social-media {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .9rem;
+    margin-top: -5px;
+}
+
+footer .bottom .social-media a {
+    display: block;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px 10px;
+    border-radius: 50%;
+    max-height: 38px;
+}
+
+footer .bottom .social-media a span {
+    position: relative;
+    top: 4px;
+    color: $white;
+}
+
+.icon-indeed:before {
+    color: $white;
+}
+
+.social-media a:hover {
+    background-color: red;
+    border-radius: 50%;
+    padding: 7px 10px 10px 10px;
+}
+
+#fb:hover {
+    background-color: #3B5998;
+}
+
+#tw:hover {
+    background-color: #00ACED;
+}
+
+#ig:hover {
+    background-color: #D93175;
+}
+
+#in:hover {
+    background-color: #0077B5;
+}

@@ -1,0 +1,38 @@
+/* ================================= 
+  Important Styles - Styles.scss
+==================================== */
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.pull-left {
+  float: left!important;
+}
+
+.pull-right {
+  float: right!important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ================================= 
+  Importing Partials - Styles.scss
+==================================== */
+
+@import 'partials/base.scss',
+        'partials/fonts.scss',
+        'partials/mixins.scss',
+        'partials/variables.scss',
+        'partials/banner.scss',
+        'partials/service-cards.scss',
+        'partials/brand.scss',
+        'partials/latest-articles.scss',
+        'partials/clients-small.scss',
+        'partials/newsletter.scss',
+        'partials/footer.scss',
+        'partials/accreditations.scss',
+        'partials/main-nav.scss',
+        'partials/header.scss';

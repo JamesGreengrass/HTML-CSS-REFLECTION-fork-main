@@ -1,0 +1,228 @@
+// Imports
+
+@import 'mixins.scss',
+        'variables.scss';
+
+/* ================================= 
+            Service Card Styles
+==================================== */
+
+.sc-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 15px 30px 15px;
+    row-gap: 30px;
+    margin: 0 auto;
+    @include mQ (768px) {
+        width: 750px;
+        column-gap: 30px;
+    }
+    @include mQ (992px) {
+        width: 970px;
+    }
+    @include mQ (1260px) {
+        width: 1200px;
+    }
+}
+
+.sc-container a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block {
+    display: block;
+    border: 1px solid $lgrey;
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: 0 3px 35px #0000001a;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.sc-container a .btn {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.block-four, .block-five,
+.block-six, .block-seven {
+    @include mQ(768px) {
+        width: 47.9%;
+        float: left;
+        margin: 0 auto;
+    }
+    @include mQ(1260px) {
+        width: 22.6%;
+    }
+}
+
+.block .icon {
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto 17px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 18px;
+}
+
+.block h2 {
+    display: block;
+    position: relative;
+    padding-bottom: 17px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+    font-size: 1.125rem;
+}
+
+.block h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 28px;
+    height: 3px;
+    display: block;
+    background-color: $bgcolorprimary;
+}
+
+.block p {
+    margin-bottom: 13px;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+}
+
+.block .icon span {
+    font-size: 23px;
+    vertical-align: middle;
+}
+ 
+.block-one, .block-two,
+.block-three {
+    @include mQ(992px) {
+        width: 31.1%;
+        margin: 0 auto;
+    }
+}
+
+.btn-soft {
+    color: $white;
+    background-color: $dgrey;
+    border-color: $dgrey;
+}
+  
+.btn-s-two {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+}
+  
+.btn-dm {
+    color: $white;
+    background-color: $green;
+    border-color: $green;
+}
+  
+.btn-t {
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+}
+  
+.btn-wd {
+    color: $white;
+    background-color: $purple;
+    border-color: $purple;
+}
+  
+.btn-cs {
+    color: $white;
+    background-color: $pink;
+    border-color: $pink;
+}
+  
+.btn-dt {
+    color: $white;
+    background-color: $purple;
+    border-color: $purple;
+}
+  
+.block-one:hover {
+    color: $white;
+    background-color: $dgrey;
+    border-color: $dgrey;
+    .icon, .btn, 
+    h2:after {
+      color: $dgrey;
+      background-color: $white;
+      border-color: $white;
+    }
+}
+  
+.block-two:hover {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+    .icon, .btn, 
+    h2:after {
+      color: $blue;
+      background-color: $white;
+      border-color: $white;
+    }
+}
+  
+.block-three:hover {
+    color: $white;
+    background-color: $green;
+    border-color: $green;
+    .icon, .btn, 
+    h2:after {
+      color: $green;
+      background-color: $white;
+      border-color: $white;
+    }
+}
+  
+.block-four:hover {
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+    .icon, .btn, 
+    h2:after {
+      color: $red;
+      background-color: $white;
+      border-color: $white;
+    }
+}
+  
+.block-five:hover,
+.block-seven:hover {
+    color: $white;
+    background-color: $purple;
+    border-color: $purple;
+    .icon, .btn, 
+    h2:after {
+      color: $purple;
+      background-color: $white;
+      border-color: $white;
+    }
+}
+  
+.block-six:hover {
+    color: $white;
+    background-color: $pink;
+    border-color: $pink;
+    .icon, .btn, 
+    h2:after {
+      color: $pink;
+      background-color: $white;
+      border-color: $white;
+    }
+}

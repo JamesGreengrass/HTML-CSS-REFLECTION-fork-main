@@ -1,38 +1,4 @@
 /* ================================= 
-  Important Styles - Styles.scss
-==================================== */
-
-*, :after, :before {
-  box-sizing: border-box;
-}
-
-.pull-left {
-  float: left!important;
-}
-
-.pull-right {
-  float: right!important;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-#main {
-  z-index: 2;
-  transition: all .5s ease-in-out;
-  position: relative;
-  background-color: #fff;
-  height: 100%; 
-}
-
-#main.active {
-  left: -275px;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
-}
-
-/* ================================= 
   Importing Partials - Styles.scss
 ==================================== */
 
@@ -51,3 +17,42 @@ body {
         'partials/main-nav.scss',
         'partials/header.scss',
         'partials/slide-out.scss';
+
+
+/* ================================= 
+  Important Styles - Styles.scss
+==================================== */
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.pull-left {
+  float: left!important;
+}
+
+.pull-right {
+  float: right!important;
+}
+
+body {
+  overflow-x: hidden;
+  transition: all .5s ease-in-out;
+}
+
+#main {
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  height: 100%; 
+}
+
+
+#main.active {
+  left: -275px;
+  cursor: pointer;
+  @include mQ(992px) {
+    left: -350px;
+  }
+}
+

@@ -7,6 +7,13 @@
             Header Styles
 ==================================== */
 
+header {
+    position: fixed;
+    transition: top 0.5s ease-in-out;
+    z-index: 4;
+    width: 100%;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -17,6 +24,7 @@
     margin-top: 0px;
     margin-bottom: 20px;
     margin-right: 0px;
+    transition: transform 0.4s;
     @include mQ(768px) {
       width: 100%;
     }
@@ -36,7 +44,6 @@
 }
 
 #logo-a {
-    margin-right: 111px;
     @include mQ(768px) {
       margin-right: 58px;
     }
@@ -333,4 +340,14 @@
 .icon-magnifying-glass {
     font-size: 25px;
     vertical-align: middle;
+}
+
+.nav-up {
+    @include mQMax(767px) {
+        top: -180px;
+    }
+    top: -120px;
+    @include mQ(992px) {
+        top: -209px;
+    }
 }

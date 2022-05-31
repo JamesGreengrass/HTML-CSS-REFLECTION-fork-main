@@ -16,12 +16,13 @@
     background-color: $bgcolorprimary;
     width: 275px;
     overflow: auto;
-    transition: all .5s ease-in-out;
+    @include mQ(992px) {
+        width: 350px;
+    }
 }
 
 #sidebar.active {
     right: 0px;
-    transition: all .5s ease-in-out;
     z-index: 2;
 }
 
@@ -37,6 +38,14 @@
 
 .sidebar-small ul li {
     padding: 20px 0 0;
+}
+
+.sidebar-small ul li a:hover {
+    background-color: #3D404E;
+}
+
+.sidebar-small ul li ul li a:hover {
+    background-color: #262834;
 }
 
 .sidebar ul li a, 

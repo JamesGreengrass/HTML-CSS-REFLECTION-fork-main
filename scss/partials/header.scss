@@ -280,7 +280,11 @@
     top: 5px;
     margin-bottom: 0;
 }
-  
+
+#menu-btn.active {
+    display: inline-block;
+}
+
 .title {
     display: block;
     font-size: .75rem;

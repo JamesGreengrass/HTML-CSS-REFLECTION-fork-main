@@ -7,6 +7,10 @@
             Service Card Styles
 ==================================== */
 
+.sc-cards {
+    background-color: $white;
+}
+
 .sc-container {
     display: flex;
     flex-direction: row;
@@ -14,6 +18,7 @@
     padding: 30px 15px 30px 15px;
     row-gap: 30px;
     margin: 0 auto;
+    background-color: $white;
     @include mQ (768px) {
         width: 750px;
         column-gap: 30px;

@@ -7,15 +7,22 @@
             Slide-Out Styles
 ==================================== */
 
-.sidebar {
+#sidebar {
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 9;
+    right: 0px;
+    z-index: -1;
     height: 100%;
     background-color: $bgcolorprimary;
     width: 275px;
     overflow: auto;
+    transition: all .5s ease-in-out;
+}
+
+#sidebar.active {
+    right: 0px;
+    transition: all .5s ease-in-out;
+    z-index: 2;
 }
 
 .sidebar-small {
@@ -37,8 +44,78 @@
     color: $white;
 }
 
-.sidebar-small ul li a,
+.sidebar-small ul li ul {
+    margin-top: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sidebar ul li ul li {
+    padding-top: 0px;
+}
 .sidebar ul li ul li a {
+    background-color: rgba(0,0,0,.25);
+    padding: 10px;
+}
+
+.sidebar-al li a {
+    border-top: 1px solid hsla(0,0%,100%,.1);
+    border-bottom: 1px solid rgba(0,0,0,.25);
+}
+ 
+.sidebar ul li a {
+    display: block;
+    color: $white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1;
+    position: relative;
+}
+
+.sidebar ul li ul li a {
+    display: block;
+    color: $white;
+    background-color: rgba(0,0,0,.25);
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sidebar-al li ul li a::before {
+    content: "\BB";
+    padding-right: 15px;
+} 
+
+.sidebar-al li a::before {
+    content: "";
+}
+
+.sidebar-al li ul li a:hover {
+    background-color: rgba(0,0,0,.25);
+}
+
+.sidebar-al li a:hover {
+    background-color: #3D404E;
+}
+
+.sidebar-serv {
+    display: none;
+    @include mQ(992px) {
+        display: block;
+    }
+}
+
+.sidebar-small {
+    display: block;
+    @include mQ(992px) {
+        display: none;
+    }
+}
+
+.sidebar-small ul li a {
     display: block;
     color: $white;
     text-align: center;
@@ -54,16 +131,46 @@
     border: 1px solid hsla(0,0%,100%, .1);
 }
 
-.sidebar-small ul li ul {
-    margin-top: 20px;
-    border-radius: 3px;
-    overflow: hidden;
+.sidebar ul li a span {
+    padding-bottom: 10px;
+    font-size: 1.438rem;
 }
 
-.sidebar ul li ul li {
-    padding-top: 0px;
+.sidebar ul li .software span {
+    color: $dgrey;
 }
-.sidebar ul li ul li a {
-    background-color: rgba(0,0,0,.25);
-    padding: 10px;
+
+.sidebar ul li .support span {
+    color: $blue;
 }
+
+.sidebar ul li .digital span {
+    color: $green;
+}
+
+.sidebar ul li .telecoms span {
+    color: $red;
+}
+
+.sidebar ul li .web span,
+.sidebar ul li .school span {
+    color: $purple;
+}
+
+.sidebar ul li .security span {
+    color: $pink;
+}
+
+.sidebar ul li a * {
+    display: block;
+}
+
+.sidebar ul li a small {
+    font-size: .625rem;
+    padding-bottom: 8px;
+}
+
+.sidebar-small ul li ul li:not(:first-child) a {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+}
+

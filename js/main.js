@@ -2,6 +2,19 @@ var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
+let popup = document.getElementById("popup");
+
+let open = function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+setTimeout(open, 3000);
+
+let close = function closePopup(){
+    popup.classList.remove("open-popup");
+}
+
+popup.addEventListener("click", close);
 
 $(window).scroll(function(event){
     didScroll = true;

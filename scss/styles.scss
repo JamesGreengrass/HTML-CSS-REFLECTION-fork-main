@@ -75,6 +75,19 @@ body {
   visibility: hidden;
 }
 
+.cookie-settings {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 8000;
+  overflow-y: auto;
+}
+
 .modal-dialog {
   position: relative;
   width: auto;
@@ -160,6 +173,131 @@ body {
   width: 100%;
 }
 
+.btn-light {
+  color: #aaa;
+  background-color: #fff;
+  border-color: #f0f0f0;
+}
 .open-popup {
   visibility: visible;
+}
+
+.container-c {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  @include mQ(768px) {
+    width: 750px;
+  }
+  @include mQ(992px) {
+    width: 970px;
+  }
+  @include mQ(1260px) {
+    width: 1200px;
+  }
+}
+
+.container-c h3 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: $bgcolorprimary;
+  line-height: 1.1;
+}
+
+.container-c h5 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.container-c h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: $bgcolorprimary;
+  line-height: 1.1;
+}
+
+.container-c h4 {
+  font-size: 1rem;
+  margin: 0 0 15px;
+  color: $bgcolorprimary;
+  line-height: 1.1;
+}
+
+.container-c ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.container-c ul li {
+  list-style-type: disc; 
+}
+
+.container-c .buttons {
+  @include mQ(992px) {
+    float: right;
+  }
+}
+
+.buttons .btn-default,
+.container-c .table .btn-default {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+
+#pac {
+  margin-top: 70px;
+}
+
+#dif-5 {
+  margin-top: 100px;
+}
+
+table {
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+table td {
+  border: 1px solid #fff;
+  background-color: #eee;
+  padding: 15px;
+  height: 20px;
+}
+
+.cookie-settings table td {
+  border: 1px solid #fff;
+  background-color: #ddd;
+  padding: 15px;
+  min-height: 20px;
+}
+
+.cookie-settings table thead tr td {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.table-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.actions .buttons {
+  margin: 30px auto;
 }

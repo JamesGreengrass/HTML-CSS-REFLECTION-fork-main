@@ -3,6 +3,7 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 let popup = document.getElementById("popup");
+const btn = document.getElementById('unhide');
 
 let open = function openPopup(){
     popup.classList.add("open-popup");
@@ -52,3 +53,17 @@ function show() {
     document.getElementById('menu-btn').classList.toggle('is-active');
     document.getElementById('main').classList.toggle('active');
 }
+
+$("#unhide").click(function() {
+    $("#tab").toggle();
+})
+
+btn.addEventListener('click', function handleClick() {
+    const initialText = 'Hide Detailed Preferences';
+
+    if (btn.textContent.includes(initialText)) {
+        btn.textContent = 'Show Detailed Preferences';
+    } else {
+        btn.textContent = initialText;
+    }
+})

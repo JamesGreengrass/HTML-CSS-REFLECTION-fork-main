@@ -7,8 +7,11 @@ const btn = document.getElementById('unhide');
 const settingsBtn = document.getElementById('open-settings');
 const cancelSettings = document.getElementById('cancel-settings');
 const continueW = document.getElementById('continue');
+const body = document.getElementById('body');
+const accept = document.getElementById('accept');
 
 let open = function openPopup(){
+    body.classList.add("open-popup");
     popup.classList.add("open-popup");
 }
 
@@ -16,9 +19,11 @@ setTimeout(open, 3000);
 
 let close = function closePopup(){
     popup.classList.remove("open-popup");
+    body.classList.remove("open-popup");
 }
 
-popup.addEventListener("click", close);
+accept.addEventListener("click", close);
+continueW.addEventListener("click", close);
 
 settingsBtn.addEventListener('click', () => {
     const settings = document.getElementById('settings');
@@ -66,12 +71,11 @@ function hasScrolled() {
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
     
-
     if (st > lastScrollTop && st > navbarHeight){
-        $('header').removeClass('nav-down').addClass('nav-up');
+        $('header').removeClass('animate__slideInDown').addClass('animate__slideOutUp');
     } else {
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+            $('header').removeClass('animate__slideOutUp').addClass('animate__slideInDown');
         }
     }
     

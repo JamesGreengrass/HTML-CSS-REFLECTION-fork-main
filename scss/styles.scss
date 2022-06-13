@@ -51,6 +51,7 @@ body {
 #main.active {
   left: -275px;
   cursor: pointer;
+  overflow: hidden;
   @include mQ(992px) {
     left: -350px;
   }
@@ -180,6 +181,7 @@ body {
 }
 .open-popup {
   visibility: visible;
+  overflow: hidden;
 }
 
 .container-c {
@@ -286,9 +288,14 @@ table td {
   min-height: 20px;
 }
 
-.cookie-settings table thead tr td {
+.cookie-settings table thead tr th {
   background-color: #aaa;
   color: #fff;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+
 }
 
 .table-buttons {
@@ -319,3 +326,11 @@ table td {
 #settings.active {
   visibility: visible;
 } 
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: 0.2s;
+}
+
+.animate__animated.animate__slideOutUp {
+  --animate-duration: 0.2s;
+}

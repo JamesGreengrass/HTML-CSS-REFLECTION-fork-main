@@ -12,9 +12,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
 
-    <body>
+    <div id="body">
         <!-- HTML for cookie app -->
         <div id="cookie-app">
             <div class="cookie-consent" id="popup">
@@ -36,7 +37,7 @@
                                     <a class="btn btn-default btn-block" id="open-settings" onclick="openSettings()">Change Settings</a>
                                 </div>
                                 <div class="button-cont-two">
-                                    <a class="btn btn-wd btn-block" onclick="closePopup()">Accept Cookies</a>
+                                    <a class="btn btn-wd btn-block" id="accept">Accept Cookies</a>
                                 </div>
                             </div>
                         </div>
@@ -130,9 +131,9 @@
                         <table id="tab">
                             <thead>
                                 <tr>
-                                    <td colspan="50">Company</td>
-                                    <td colspan="50">Domain</td>
-                                    <td></td>
+                                    <th colspan="50">Company</th>
+                                    <th colspan="50">Domain</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -262,7 +263,7 @@
         </div>
         <div class="main" id="main">
             <!-- HTML for header -->
-            <header>
+            <header class="animate__animated">
                 <div class="container">
                     <a href="#" id="logo-a">
                         <img src="assets/img/f-logo.png" alt="Netmatters Logo" class="logo">
@@ -813,7 +814,7 @@
                                         <div class="arrow"></div>
                                     </div>
                                 </div>
-                                <img src="assets/img/busseys-colour.png">
+                                <img src="assets/img/busseys-colour.png" alt="Busseys logo in colour">
                             </div>
                             <div class="sc-item">
                                 <div class="description">
@@ -826,7 +827,7 @@
                                         <div class="arrow"></div>
                                     </div>
                                 </div>
-                                <img src="assets/img/crane-colour.png">
+                                <img src="assets/img/crane-colour.png" alt="Crane logo in colour">
                             </div>
                             <div class="sc-item">
                                 <div class="description">
@@ -836,7 +837,7 @@
                                         <div class="arrow"></div>
                                     </div>
                                 </div>
-                                <img src="assets/img/beat-colour.png">
+                                <img src="assets/img/beat-colour.png" alt="Beat logo in colour">
                             </div>
                             <div class="sc-item">
                                 <div class="description">
@@ -848,7 +849,7 @@
                                         <div class="arrow"></div>
                                     </div>
                                 </div>
-                                <img src="assets/img/northern-diver-colour.png">
+                                <img src="assets/img/northern-diver-colour.png" alt="Northern Diver logo in colour">
                             </div>
                         </div>
                     </div>
@@ -1016,30 +1017,30 @@
                             <div style="position: absolute; width: 450px; left: -10000px;"></div>
                         </div>
                         <div class="item">
-                            <img src="assets/img/silver-microsoft-partner.jpg">
+                            <img src="assets/img/silver-microsoft-partner.jpg" alt="Silver Microsoft logo">
                         </div>
                         <div class="item">
-                            <img src="assets/img/future-50-colour.jpg">
+                            <img src="assets/img/future-50-colour.jpg" alt="Future-50 logo in colour">
                         </div>
                         <div class="item">
-                            <img src="assets/img/iqs-colour.jpg">
+                            <img src="assets/img/iqs-colour.jpg" alt="IQS logo in colour">
                         </div>
                         <div class="item">
-                            <img src="assets/img/carbon-colour.jpg">
+                            <img src="assets/img/carbon-colour.jpg" alt="Carbon logo in colour">
                         </div>
                     </div>
                     <div class="list sr">
                         <div class="item">
-                            <img src="assets/img/investing-in-future-growth-colour.jpg">
+                            <img src="assets/img/investing-in-future-growth-colour.jpg" alt="Investing in future growth logo in colour">
                         </div>
                         <div class="item">
-                            <img src="assets/img/princess-royal-training-award-colour.jpg">
+                            <img src="assets/img/princess-royal-training-award-colour.jpg" alt="Princess royal training award in colour">
                         </div>
                         <div class="item">
-                            <img src="assets/img/skills-of-tomorrow-colour.jpg">
+                            <img src="assets/img/skills-of-tomorrow-colour.jpg" alt="Skills of tomorrow logo in colour">
                         </div>
                         <div class="item">
-                            <img src="assets/img/PPC_colour.jpg">
+                            <img src="assets/img/PPC_colour.jpg" alt="PPC logo in colour">
                         </div>
                     </div>
                 </div>

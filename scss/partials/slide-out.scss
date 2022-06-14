@@ -16,6 +16,7 @@
     background-color: $bgcolorprimary;
     width: 275px;
     overflow: auto;
+    transition: all .5s ease-in-out;
     @include mQ(992px) {
         width: 350px;
     }

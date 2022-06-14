@@ -37,7 +37,6 @@
 
 body {
   overflow-x: hidden;
-  transition: all .5s ease-in-out;
 }
 
 #main {
@@ -45,13 +44,14 @@ body {
   position: relative;
   background-color: #fff;
   height: 100%; 
+  transition: all .5s ease-in-out;
 }
 
 
 #main.active {
   left: -275px;
   cursor: pointer;
-  overflow: hidden;
+  overflow-y: hidden;
   @include mQ(992px) {
     left: -350px;
   }
@@ -181,7 +181,10 @@ body {
 }
 .open-popup {
   visibility: visible;
-  overflow: hidden;
+}
+
+.stop-scroll {
+  overflow-y: hidden;
 }
 
 .container-c {

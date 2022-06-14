@@ -9,17 +9,18 @@ const cancelSettings = document.getElementById('cancel-settings');
 const continueW = document.getElementById('continue');
 const body = document.getElementById('body');
 const accept = document.getElementById('accept');
+const sidebar = document.getElementById('sidebar');
 
 let open = function openPopup(){
-    body.classList.add("open-popup");
     popup.classList.add("open-popup");
+    body.classList.add("stop-scroll");
 }
 
 setTimeout(open, 3000);
 
 let close = function closePopup(){
     popup.classList.remove("open-popup");
-    body.classList.remove("open-popup");
+    body.classList.remove("stop-scroll");
 }
 
 accept.addEventListener("click", close);
@@ -94,6 +95,7 @@ function show() {
     document.getElementById('sidebar').classList.toggle('active');
     document.getElementById('menu-btn').classList.toggle('is-active');
     document.getElementById('main').classList.toggle('active');
+    // sidebar.classList.toggle('animate__slideInRight');
 }
 
 $("#unhide").click(function() {
@@ -109,6 +111,15 @@ btn.addEventListener('click', function handleClick() {
         btn.textContent = initialText;
     }
 })
+
+$(document).ready(function(){
+    $('.banner').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+    });
+});
 
 document.querySelectorAll('.cookie-btn-E').forEach( item => {
     item.addEventListener('click', () => {

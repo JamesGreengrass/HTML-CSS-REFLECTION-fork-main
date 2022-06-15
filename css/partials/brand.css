@@ -1,1 +1,51 @@
-.brand-bg{background-color:#333645;color:#fff}@media screen and (min-width: 992px){.brand-bg{background-image:url(../../assets/img/logo-background.png);background-repeat:no-repeat;background-position:100%;background-size:auto 100%}}.brand-container{display:flex;flex-direction:row}.brand-container{padding:50px 15px;margin:0 auto;width:100%}@media screen and (min-width: 768px){.brand-container{width:750px;padding-right:20rem}}@media screen and (min-width: 992px){.brand-container{width:970px;padding-right:25rem}}@media screen and (min-width: 1260px){.brand-container{width:1200px;padding-right:35rem}}.brand-text h1{font-weight:400;font-size:2.25rem;margin:0 0 28px;text-transform:uppercase}.btn-oc{color:#333645;background-color:#fff;border-color:#fff;padding:0 15px}.btn-oc:hover{background-color:#EBEBEB}
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Brand Section Styles
+==================================== */
+.brand-bg {
+  background-color: #333645;
+  color: #fff; }
+  @media screen and (min-width: 992px) {
+    .brand-bg {
+      background-image: url(../../assets/img/logo-background.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-size: auto 100%; } }
+
+.brand-container {
+  display: flex;
+  flex-direction: row; }
+
+.brand-container {
+  padding: 50px 15px;
+  margin: 0 auto;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .brand-container {
+      width: 750px;
+      padding-right: 20rem; } }
+  @media screen and (min-width: 992px) {
+    .brand-container {
+      width: 970px;
+      padding-right: 25rem; } }
+  @media screen and (min-width: 1260px) {
+    .brand-container {
+      width: 1200px;
+      padding-right: 35rem; } }
+
+.brand-text h1 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin: 0 0 28px;
+  text-transform: uppercase; }
+
+.btn-oc {
+  color: #333645;
+  background-color: #fff;
+  border-color: #fff;
+  padding: 0 15px; }
+
+.btn-oc:hover {
+  background-color: #EBEBEB; }

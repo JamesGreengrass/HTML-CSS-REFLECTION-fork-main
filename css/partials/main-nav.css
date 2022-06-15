@@ -1,1 +1,193 @@
-.main-navigation{background-color:#333645}@media screen and (max-width: 992px){.main-navigation{display:none}}.main-navigation .bar-container>ul{position:relative;padding:0;margin:0;list-style:none;display:flex;flex-direction:row;border-left:1px solid rgba(255,255,255,0.1);border-right:1px solid rgba(0,0,0,0.25)}.main-navigation .bar-container>ul>li{flex:1;text-align:center;border-right:1px solid rgba(255,255,255,0.1);border-left:1px solid rgba(0,0,0,0.25)}.main-navigation .bar-container>ul>li:hover>ul{display:block}.main-navigation .bar-container>ul>li>a{position:relative;display:block;color:#fff;padding:19px 0 18px;text-transform:uppercase;font-size:1.125rem;text-decoration:none;line-height:1}.main-navigation .bar-container>ul>li>a>span{display:block;padding-bottom:10px;font-size:1.438rem}.main-navigation .bar-container>ul>li>a small{display:block;padding-bottom:1px;font-size:.625rem}.main-navigation .bar-container>ul>li>ul{padding:0;margin:0;display:none;background-color:#1d1f28;position:absolute;top:100%;left:-1px;right:-1px;z-index:10;list-style:none}.main-navigation .bar-container>ul>li>ul:before,.main-navigation .bar-container>ul>li>ul:after{content:"";display:block;position:absolute;top:0;bottom:0;background-color:#1d1f28}.main-navigation .bar-container>ul>li>ul:before{right:100%;width:2000px}.main-navigation .bar-container>ul>li>ul:after{clear:both}.main-navigation .bar-container>ul>li>ul:after{left:100%;width:31.3%}.main-navigation .bar-container>ul>li>ul{color:#fff}.main-navigation .bar-container>ul>li>ul>li{float:left}.main-navigation .bar-container>ul>li.software:hover{background-color:#67809F}.main-navigation .bar-container>ul>li.software>a>span{color:#67809F}.main-navigation .bar-container>ul>li.it:hover>a>span,.main-navigation .bar-container>ul>li.software:hover>a>span,.main-navigation .bar-container>ul>li.digital:hover>a>span,.main-navigation .bar-container>ul>li.telecoms:hover>a>span,.main-navigation .bar-container>ul>li.web:hover>a>span,.main-navigation .bar-container>ul>li.security:hover>a>span,.main-navigation .bar-container>ul>li.developer-course:hover>a>span{color:#fff}.main-navigation .bar-container>ul>li.software>ul,.main-navigation .bar-container>ul>li.software>ul::before,.main-navigation .bar-container>ul>li.software>ul:after{background-color:#526781}.main-navigation .bar-container>ul>li.it:hover{background-color:#4183d7}.main-navigation .bar-container>ul>li.it>a>span{color:#4183d7}.main-navigation .bar-container>ul>li.it>ul,.main-navigation .bar-container>ul>li.it>ul::before,.main-navigation .bar-container>ul>li.it>ul:after{background-color:#286ABD}.main-navigation .bar-container>ul>li.digital:hover{background-color:#2ECC71}.main-navigation .bar-container>ul>li.digital>a>span{color:#2ECC71}.main-navigation .bar-container>ul>li.digital>ul,.main-navigation .bar-container>ul>li.digital>ul::before,.main-navigation .bar-container>ul>li.digital>ul:after{background-color:#25a25a}.main-navigation .bar-container>ul>li.telecoms:hover{background-color:#D64541}.main-navigation .bar-container>ul>li.telecoms>a>span{color:#D64541}.main-navigation .bar-container>ul>li.telecoms>ul,.main-navigation .bar-container>ul>li.telecoms>ul::before,.main-navigation .bar-container>ul>li.telecoms>ul:after{background-color:#BC2C28}.main-navigation .bar-container>ul>li.developer-course:hover,.main-navigation .bar-container>ul>li.web:hover{background-color:#926FB1}.main-navigation .bar-container>ul>li.developer-course>a>span,.main-navigation .bar-container>ul>li.web>a>span{color:#926FB1}.main-navigation .bar-container>ul>li.developer-course>ul,.main-navigation .bar-container>ul>li.developer-course>ul::before,.main-navigation .bar-container>ul>li.developer-course>ul:after,.main-navigation .bar-container>ul>li.web>ul,.main-navigation .bar-container>ul>li.web>ul::before,.main-navigation .bar-container>ul>li.web>ul:after{background-color:#79539A}.main-navigation .bar-container>ul>li.security:hover{background-color:#F62459}.main-navigation .bar-container>ul>li.security>a>span{color:#F62459}.main-navigation .bar-container>ul>li.security>ul,.main-navigation .bar-container>ul>li.security>ul::before,.main-navigation .bar-container>ul>li.security>ul:after{background-color:#DE093F}.main-navigation .bar-container>ul>li>ul>li>a{text-decoration:none;text-align:left;display:block;line-height:2.813rem;color:#fff;text-transform:uppercase;font-size:1rem}@media screen and (max-width: 1259px){.main-navigation .bar-container>ul>li>ul>li>a{font-size:.8125rem}}.main-navigation .bar-container>ul>li>ul>li:not(:last-child) a:after{content:"-";padding-left:20px}@media screen and (min-width: 1260px){.main-navigation .bar-container>ul>li>ul>li:not(:last-child) a:after{padding-left:30px}}.main-navigation .bar-container>ul>li>ul>li:not(:first-child) a{padding-left:20px}@media screen and (min-width: 1260px){.main-navigation .bar-container>ul>li>ul>li:not(:first-child) a{padding-left:30px}}
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Accreditations Styles
+==================================== */
+.main-navigation {
+  background-color: #333645; }
+  @media screen and (max-width: 992px) {
+    .main-navigation {
+      display: none; } }
+
+.main-navigation .bar-container > ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.25); }
+
+.main-navigation .bar-container > ul > li {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.25); }
+
+.main-navigation .bar-container > ul > li:hover > ul {
+  display: block; }
+
+.main-navigation .bar-container > ul > li > a {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 1; }
+
+.main-navigation .bar-container > ul > li > a > span {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.438rem; }
+
+.main-navigation .bar-container > ul > li > a small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: .625rem; }
+
+.main-navigation .bar-container > ul > li > ul {
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #1d1f28;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  z-index: 10;
+  list-style: none; }
+
+.main-navigation .bar-container > ul > li > ul:before,
+.main-navigation .bar-container > ul > li > ul:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #1d1f28; }
+
+.main-navigation .bar-container > ul > li > ul:before {
+  right: 100%;
+  width: 2000px; }
+
+.main-navigation .bar-container > ul > li > ul:after {
+  clear: both; }
+
+.main-navigation .bar-container > ul > li > ul:after {
+  left: 100%;
+  width: 31.3%; }
+
+.main-navigation .bar-container > ul > li > ul {
+  color: #fff; }
+
+.main-navigation .bar-container > ul > li > ul > li {
+  float: left; }
+
+.main-navigation .bar-container > ul > li.software:hover {
+  background-color: #67809F; }
+
+.main-navigation .bar-container > ul > li.software > a > span {
+  color: #67809F; }
+
+.main-navigation .bar-container > ul > li.it:hover > a > span,
+.main-navigation .bar-container > ul > li.software:hover > a > span,
+.main-navigation .bar-container > ul > li.digital:hover > a > span,
+.main-navigation .bar-container > ul > li.telecoms:hover > a > span,
+.main-navigation .bar-container > ul > li.web:hover > a > span,
+.main-navigation .bar-container > ul > li.security:hover > a > span,
+.main-navigation .bar-container > ul > li.developer-course:hover > a > span {
+  color: #fff; }
+
+.main-navigation .bar-container > ul > li.software > ul,
+.main-navigation .bar-container > ul > li.software > ul::before,
+.main-navigation .bar-container > ul > li.software > ul:after {
+  background-color: #526781; }
+
+.main-navigation .bar-container > ul > li.it:hover {
+  background-color: #4183d7; }
+
+.main-navigation .bar-container > ul > li.it > a > span {
+  color: #4183d7; }
+
+.main-navigation .bar-container > ul > li.it > ul,
+.main-navigation .bar-container > ul > li.it > ul::before,
+.main-navigation .bar-container > ul > li.it > ul:after {
+  background-color: #286ABD; }
+
+.main-navigation .bar-container > ul > li.digital:hover {
+  background-color: #2ECC71; }
+
+.main-navigation .bar-container > ul > li.digital > a > span {
+  color: #2ECC71; }
+
+.main-navigation .bar-container > ul > li.digital > ul,
+.main-navigation .bar-container > ul > li.digital > ul::before,
+.main-navigation .bar-container > ul > li.digital > ul:after {
+  background-color: #25a25a; }
+
+.main-navigation .bar-container > ul > li.telecoms:hover {
+  background-color: #D64541; }
+
+.main-navigation .bar-container > ul > li.telecoms > a > span {
+  color: #D64541; }
+
+.main-navigation .bar-container > ul > li.telecoms > ul,
+.main-navigation .bar-container > ul > li.telecoms > ul::before,
+.main-navigation .bar-container > ul > li.telecoms > ul:after {
+  background-color: #BC2C28; }
+
+.main-navigation .bar-container > ul > li.developer-course:hover,
+.main-navigation .bar-container > ul > li.web:hover {
+  background-color: #926FB1; }
+
+.main-navigation .bar-container > ul > li.developer-course > a > span,
+.main-navigation .bar-container > ul > li.web > a > span {
+  color: #926FB1; }
+
+.main-navigation .bar-container > ul > li.developer-course > ul,
+.main-navigation .bar-container > ul > li.developer-course > ul::before,
+.main-navigation .bar-container > ul > li.developer-course > ul:after,
+.main-navigation .bar-container > ul > li.web > ul,
+.main-navigation .bar-container > ul > li.web > ul::before,
+.main-navigation .bar-container > ul > li.web > ul:after {
+  background-color: #79539A; }
+
+.main-navigation .bar-container > ul > li.security:hover {
+  background-color: #F62459; }
+
+.main-navigation .bar-container > ul > li.security > a > span {
+  color: #F62459; }
+
+.main-navigation .bar-container > ul > li.security > ul,
+.main-navigation .bar-container > ul > li.security > ul::before,
+.main-navigation .bar-container > ul > li.security > ul:after {
+  background-color: #DE093F; }
+
+.main-navigation .bar-container > ul > li > ul > li > a {
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  line-height: 2.813rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem; }
+  @media screen and (max-width: 1259px) {
+    .main-navigation .bar-container > ul > li > ul > li > a {
+      font-size: .8125rem; } }
+
+.main-navigation .bar-container > ul > li > ul > li:not(:last-child) a:after {
+  content: "-";
+  padding-left: 20px; }
+  @media screen and (min-width: 1260px) {
+    .main-navigation .bar-container > ul > li > ul > li:not(:last-child) a:after {
+      padding-left: 30px; } }
+
+.main-navigation .bar-container > ul > li > ul > li:not(:first-child) a {
+  padding-left: 20px; }
+  @media screen and (min-width: 1260px) {
+    .main-navigation .bar-container > ul > li > ul > li:not(:first-child) a {
+      padding-left: 30px; } }

@@ -95,7 +95,6 @@ function show() {
     document.getElementById('sidebar').classList.toggle('active');
     document.getElementById('menu-btn').classList.toggle('is-active');
     document.getElementById('main').classList.toggle('active');
-    // sidebar.classList.toggle('animate__slideInRight');
 }
 
 $("#unhide").click(function() {
@@ -120,52 +119,3 @@ $(document).ready(function(){
         arrows: false,
     });
 });
-
-document.querySelectorAll('.cookie-btn-E').forEach( item => {
-    item.addEventListener('click', () => {
-       const cookieButtonD = document.querySelectorAll('.cookie-btn-D');
-       const cookieButtonE = document.querySelectorAll('.cookie-btn-E');
-
-        if(cookieButtonD[0].classList === 'btn-wd') {
-            cookieButtonE[0].classList.add('btn-light');
-        } else {
-            cookieButtonD[0].classList.add('btn-light');
-            cookieButtonE[0].classList.remove('btn-default');
-            cookieButtonE[0].classList.remove('btn-light');
-            cookieButtonE[0].classList.add('btn-wd');
-        }
-
-        if (cookieButtonD[1].classList === 'btn-wd') {
-            cookieButtonE[1].classList.add('btn-light');
-        }
-        else {
-            cookieButtonD[1].classList.add('btn-light');
-            cookieButtonE[1].classList.remove('btn-default');
-            cookieButtonE[1].classList.remove('btn-light');
-            cookieButtonE[1].classList.add('btn-wd');
-        }
-    })
-})
-
-document.querySelectorAll('.cookie-btn-D').forEach( item => {
-    item.addEventListener('click', () => { 
-        const cookieButtonD = document.querySelectorAll('.cookie-btn-D');
-        const cookieButtonE = document.querySelectorAll('.cookie-btn-E');
-
-        if(cookieButtonE[0].classList === 'btn-wd') {
-            cookieButtonD[0].classList.add('btn-light');
-        } else {
-            cookieButtonE[0].classList.remove('btn-wd');
-            cookieButtonE[0].classList.add('btn-light');
-            cookieButtonD[0].classList.remove('btn-light');
-        }
-
-        if(cookieButtonE[1].classList === 'btn-light') {
-            cookieButtonD[1].classList.add('btn-light');
-        } else {   
-            cookieButtonE[1].classList.remove('btn-wd');
-            cookieButtonE[1].classList.add('btn-light');
-            cookieButtonD[1].classList.remove('btn-light');
-        }
-    })
-})

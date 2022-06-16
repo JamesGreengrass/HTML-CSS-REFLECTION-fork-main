@@ -119,14 +119,6 @@
 }
 
 .slick-dots li button {
-    border-radius: 50%;
-    background-color: #ffffff80;
-    border: 0px;
-    height: 11px;
-    width: 11px;
-}
-
-.slick-dots li button {
     text-indent: -9999px;
 }
 

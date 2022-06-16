@@ -112,10 +112,14 @@ btn.addEventListener('click', function handleClick() {
 })
 
 $(document).ready(function(){
-    $('.banner').slick({
-        dots: true,
-        infinite: true,
+    $(".owl-carousel").owlCarousel({
         autoplay: true,
-        arrows: false,
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+        }
     });
 });

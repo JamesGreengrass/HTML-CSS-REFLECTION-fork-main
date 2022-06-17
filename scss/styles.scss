@@ -44,7 +44,6 @@ body {
   position: relative;
   background-color: #fff;
   height: 100%; 
-  transition: all .5s ease-in-out;
 }
 
 
@@ -181,10 +180,6 @@ body {
 }
 .open-popup {
   visibility: visible;
-}
-
-.stop-scroll {
-  overflow-y: hidden;
 }
 
 .container-c {

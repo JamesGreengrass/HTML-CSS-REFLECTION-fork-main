@@ -12,8 +12,7 @@
   height: 100%;
   background-color: #333645;
   width: 275px;
-  overflow: auto;
-  transition: all .5s ease-in-out; }
+  overflow: auto; }
   @media screen and (min-width: 992px) {
     #sidebar {
       width: 350px; } }

@@ -234,6 +234,10 @@ button.owl-dot.active span:hover {
 }
 
 button.owl-dot.active span::after {
+  background-color: red;
+}
+
+.white-circle {
   position: absolute;
   top: -6px;
   left: -6px;

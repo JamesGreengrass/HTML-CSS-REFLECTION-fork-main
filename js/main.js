@@ -10,21 +10,36 @@ const continueW = document.getElementById('continue');
 const body = document.getElementById('body');
 const accept = document.getElementById('accept');
 const sidebar = document.getElementById('sidebar');
-
-let open = function openPopup(){
-    popup.classList.add("open-popup");
-    body.classList.add("stop-scroll");
+const accepted = {
+    name: "Cookies",
+    value: "Yes",
 }
 
-setTimeout(open, 3000);
+function checkCookies() {
 
-let close = function closePopup(){
-    popup.classList.remove("open-popup");
-    body.classList.remove("stop-scroll");
+    let open = function openPopup(){}
+    
+        if (window.localStorage.getItem('Cookie') === '{"name":"Cookies","value":"Yes"}') {
+            setTimeout(open, 90000000000000000000000000000000000000000000000000000000);
+        } else {
+            let open = function openPopup(){
+                popup.classList.add("open-popup");
+                $('body').css('overflow-y', 'hidden');
+            }
+            setTimeout(open, 3000);
+        }
+
+    let close = function closePopup(){
+        popup.classList.remove("open-popup");
+        $('body').css('overflow-y', "");
+        window.localStorage.setItem('Cookie', JSON.stringify(accepted));
+    }
+
+    accept.addEventListener("click", close);
+    continueW.addEventListener("click", close);
 }
 
-accept.addEventListener("click", close);
-continueW.addEventListener("click", close);
+checkCookies();
 
 settingsBtn.addEventListener('click', () => {
     const settings = document.getElementById('settings');
@@ -122,4 +137,12 @@ $(document).ready(function(){
             },
         }
     });
+    
 });
+
+$('.main').css('transition-property', 'all');
+$('.sidebar').css('transition-property', 'all');
+
+$('.owl-button.active').children().addClass('white-circle');
+
+console.log('john');

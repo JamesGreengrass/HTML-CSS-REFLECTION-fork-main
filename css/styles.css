@@ -1428,7 +1428,8 @@ header {
   padding: 7px 20px 3px;
   height: 56px;
   font-size: 1.063rem;
-  border-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
   border: none;
   vertical-align: bottom;
   background-color: #999aa2;
@@ -1632,18 +1633,21 @@ header {
   position: fixed;
   top: 0;
   right: 0px;
-  z-index: -1;
   height: 100%;
   background-color: #333645;
-  width: 275px;
-  overflow: auto; }
-  @media screen and (min-width: 992px) {
-    #sidebar {
-      width: 350px; } }
+  overflow: auto;
+  transition: 0.5s; }
 
-#sidebar.active {
-  right: 0px;
-  z-index: 2; }
+.sidebar {
+  z-index: -1;
+  width: 0px; }
+
+.sidebar-active {
+  width: 275px;
+  z-index: 5; }
+  @media screen and (min-width: 992px) {
+    .sidebar-active {
+      width: 350px; } }
 
 .sidebar-small {
   padding: 21px; }
@@ -1786,21 +1790,29 @@ header {
   float: right !important; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: white; }
+
+.body-active {
+  background-color: rgba(0, 0, 0, 0.4); }
 
 #main {
   z-index: 2;
   position: relative;
   background-color: #fff;
-  height: 100%; }
+  height: 100%;
+  transition: right .5s; }
 
-#main.active {
-  left: -275px;
+.main {
+  right: 0px; }
+
+.main-active {
+  right: 275px;
   cursor: pointer;
   overflow-y: hidden; }
   @media screen and (min-width: 992px) {
-    #main.active {
-      left: -350px; } }
+    .main-active {
+      right: 350px; } }
 
 .cookie-consent {
   position: fixed;

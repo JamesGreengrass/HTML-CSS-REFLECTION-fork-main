@@ -8,18 +8,21 @@
   position: fixed;
   top: 0;
   right: 0px;
-  z-index: -1;
   height: 100%;
   background-color: #333645;
-  width: 275px;
-  overflow: auto; }
-  @media screen and (min-width: 992px) {
-    #sidebar {
-      width: 350px; } }
+  overflow: auto;
+  transition: 0.5s; }
 
-#sidebar.active {
-  right: 0px;
-  z-index: 2; }
+.sidebar {
+  z-index: -1;
+  width: 0px; }
+
+.sidebar-active {
+  width: 275px;
+  z-index: 5; }
+  @media screen and (min-width: 992px) {
+    .sidebar-active {
+      width: 350px; } }
 
 .sidebar-small {
   padding: 21px; }

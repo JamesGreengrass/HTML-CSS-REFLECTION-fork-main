@@ -124,7 +124,8 @@ header {
     padding: 7px 20px 3px;
     height: 56px;
     font-size: 1.063rem;
-    border-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
     border: none;
     vertical-align: bottom;
     background-color: $grey;

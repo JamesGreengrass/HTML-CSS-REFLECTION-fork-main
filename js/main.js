@@ -16,11 +16,11 @@ const accepted = {
 }
 
 function checkCookies() {
-
+    
     let open = function openPopup(){}
     
         if (window.localStorage.getItem('Cookie') === '{"name":"Cookies","value":"Yes"}') {
-            setTimeout(open, 90000000000000000000000000000000000000000000000000000000);
+            setTimeout(open, 9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
         } else {
             let open = function openPopup(){
                 popup.classList.add("open-popup");
@@ -106,15 +106,12 @@ setInterval(function() {
 }, 250);
 
 
-function show() {
-    document.getElementById('sidebar').classList.toggle('active');
+function openNav() {
+    document.getElementById('sidebar').classList.toggle('sidebar-active');
     document.getElementById('menu-btn').classList.toggle('is-active');
-    document.getElementById('main').classList.toggle('active');
+    document.getElementById('main').classList.toggle('main-active');
+    document.body.classList.toggle('body-active');
 }
-
-$("#unhide").click(function() {
-    $("#tab").toggle();
-})
 
 btn.addEventListener('click', function handleClick() {
     const initialText = 'Hide Detailed Preferences';
@@ -144,5 +141,3 @@ $('.main').css('transition-property', 'all');
 $('.sidebar').css('transition-property', 'all');
 
 $('.owl-button.active').children().addClass('white-circle');
-
-console.log('john');

@@ -1793,9 +1793,6 @@ body {
   overflow-x: hidden;
   background-color: white; }
 
-.body-active {
-  background-color: rgba(0, 0, 0, 0.4); }
-
 #main {
   z-index: 2;
   position: relative;
@@ -2052,3 +2049,20 @@ table td {
 
 .animate__animated.animate__slideOutUp {
   --animate-duration: 0.2s; }
+
+.main-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer; }
+
+.main-overlay.active {
+  display: block;
+  overflow-y: hidden; }

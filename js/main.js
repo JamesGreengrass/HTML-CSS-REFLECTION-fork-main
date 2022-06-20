@@ -110,8 +110,19 @@ function openNav() {
     document.getElementById('sidebar').classList.toggle('sidebar-active');
     document.getElementById('menu-btn').classList.toggle('is-active');
     document.getElementById('main').classList.toggle('main-active');
-    document.body.classList.toggle('body-active');
+    document.getElementById('main-overlay').classList.toggle('active');
+    $('body').css('overflow-y', 'hidden');
 }
+
+function closeNav() {
+    document.getElementById('sidebar').classList.toggle('sidebar-active');
+    document.getElementById('menu-btn').classList.toggle('is-active');
+    document.getElementById('main').classList.toggle('main-active');
+    document.getElementById('main-overlay').classList.toggle('active');
+    $('body').css('overflow-y', 'auto');
+}
+
+document.getElementById('main-overlay').addEventListener('click', closeNav);
 
 btn.addEventListener('click', function handleClick() {
     const initialText = 'Hide Detailed Preferences';
@@ -137,7 +148,5 @@ $(document).ready(function(){
     
 });
 
-$('.main').css('transition-property', 'all');
-$('.sidebar').css('transition-property', 'all');
 
-$('.owl-button.active').children().addClass('white-circle');
+

@@ -201,7 +201,7 @@ h2 {
 ==================================== */
 /* ---- Banner Specific Styles ---- */
 .banner {
-  background-color: #000;
+  background-color: #fff;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -635,13 +635,14 @@ h2 {
 .article-box {
   position: relative; }
 
-@media screen and (min-width: 768px) {
-  #abox-one, #abox-two {
-    width: 47%; } }
-
-@media screen and (min-width: 1260px) {
-  #abox-one, #abox-two {
-    width: 31%; } }
+#abox-one, #abox-two {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    #abox-one, #abox-two {
+      width: calc(50% - 15px); } }
+  @media screen and (min-width: 1260px) {
+    #abox-one, #abox-two {
+      width: 30.33333333%; } }
 
 #abox-three {
   width: 100%; }
@@ -651,7 +652,7 @@ h2 {
   @media screen and (min-width: 1260px) {
     #abox-three {
       display: block;
-      width: 31%; } }
+      width: 30.33333333%; } }
 
 .article-box > .category {
   position: absolute;
@@ -1336,24 +1337,23 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  transition: transform 0.4s; }
+  transition: transform 0.4s;
+  padding: 20px 15px; }
   @media screen and (min-width: 768px) {
     .container {
-      width: 100%; } }
+      width: 750px;
+      margin: 0 auto; } }
   @media screen and (min-width: 992px) {
     .container {
-      width: 100%; } }
+      width: 970px; } }
   @media screen and (min-width: 1260px) {
     .container {
-      width: 100%; } }
+      width: 1200px; } }
 
 .mob-search-container {
-  margin: 11px 33px 21px 33px; }
+  margin: 0px 15px 20px; }
   @media screen and (min-width: 768px) {
     .mob-search-container {
       display: none; } }
@@ -1500,7 +1500,6 @@ header {
   padding: 15px;
   display: inline-block;
   cursor: pointer;
-  font: inherit;
   color: inherit;
   text-transform: none;
   background-color: transparent;
@@ -1606,7 +1605,7 @@ header {
   border: none;
   color: #333645;
   position: absolute;
-  right: 40px;
+  right: 17px;
   line-height: 47px;
   outline: none; }
 
@@ -1622,6 +1621,13 @@ header {
   @media screen and (min-width: 992px) {
     .nav-up {
       top: -209px; } }
+
+.unique-container {
+  display: flex;
+  align-items: center; }
+
+#icon-phone {
+  line-height: 35px; }
 
 /* ================================= 
   Mixins - Mixins.scss

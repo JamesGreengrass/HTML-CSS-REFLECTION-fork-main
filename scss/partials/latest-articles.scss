@@ -84,8 +84,8 @@
     flex-wrap: wrap;
     row-gap: 30px;
     margin: 0 auto;
-    @include mQ(768px) {
-        column-gap: 30px;
+    @include mQ (768px) {
+    column-gap: 30px;
     }
 }
 
@@ -94,22 +94,23 @@
 }
 
 #abox-one, #abox-two {
-    @include mQ(768px) {
-        width: 47%;
+    width: 100%;
+    @include mQ (768px) {
+    width: calc(50% - 15px);
     }
-    @include mQ(1260px) {
-        width: 31%;
+    @include mQ (1260px) {
+        width: 30.33333333%;
     }
 }
 
 #abox-three {
     width: 100%;
-    @include mQ(768px) {
+    @include mQ (768px) {
         display: none;
     }
     @include mQ(1260px) {
         display: block;
-        width: 31%;
+        width: 30.33333333%;
     }
 }
 

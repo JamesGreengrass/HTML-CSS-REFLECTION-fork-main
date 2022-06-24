@@ -79,13 +79,14 @@
 .article-box {
   position: relative; }
 
-@media screen and (min-width: 768px) {
-  #abox-one, #abox-two {
-    width: 47%; } }
-
-@media screen and (min-width: 1260px) {
-  #abox-one, #abox-two {
-    width: 31%; } }
+#abox-one, #abox-two {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    #abox-one, #abox-two {
+      width: calc(50% - 15px); } }
+  @media screen and (min-width: 1260px) {
+    #abox-one, #abox-two {
+      width: 30.33333333%; } }
 
 #abox-three {
   width: 100%; }
@@ -95,7 +96,7 @@
   @media screen and (min-width: 1260px) {
     #abox-three {
       display: block;
-      width: 31%; } }
+      width: 30.33333333%; } }
 
 .article-box > .category {
   position: absolute;

@@ -17,17 +17,14 @@ const accepted = {
 
 function checkCookies() {
     
-    let open = function openPopup(){}
+    let open = function openPopup(){
+        popup.classList.add("open-popup");
+        $('body').css('overflow-y', 'hidden');
+    }
     
-        if (window.localStorage.getItem('Cookie') === '{"name":"Cookies","value":"Yes"}') {
-            setTimeout(open, 9000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
-        } else {
-            let open = function openPopup(){
-                popup.classList.add("open-popup");
-                $('body').css('overflow-y', 'hidden');
-            }
-            setTimeout(open, 3000);
-        }
+    if (window.localStorage.getItem('Cookie') !== '{"name":"Cookies","value":"Yes"}') {
+        setTimeout(open, 3000);
+    }
 
     let close = function closePopup(){
         popup.classList.remove("open-popup");
@@ -134,11 +131,18 @@ btn.addEventListener('click', function handleClick() {
     }
 })
 
+$('#unhide').click(function () {
+    $('#tab').toggle()
+})
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         autoplay: true,
         loop: true,
         margin: 10,
+        autoplayHoverPause: true,
+        autoplaySpeed: 250,
+        slideTransition: `ease 0s`,
         responsive: {
             0: {
                 items: 1
@@ -147,6 +151,4 @@ $(document).ready(function(){
     });
     
 });
-
-
 

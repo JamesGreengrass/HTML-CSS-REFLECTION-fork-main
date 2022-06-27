@@ -7,27 +7,25 @@
             Slide-Out Styles
 ==================================== */
 
-#sidebar {
+.sidebar {
     position: fixed;
     top: 0;
-    right: 0px;
+    right: -275px;
     height: 100%;
     background-color: $bgcolorprimary;
     overflow: auto;
     transition: 0.5s;
-}
-
-.sidebar {
     z-index: -1;
-    width: 0px;
+    width: 275px;
+    @include mQ(992px) {
+        right: -350px;
+        width: 350px;
+    }
 }
 
 .sidebar-active {
-    width: 275px;
     z-index: 5;
-    @include mQ(992px) {
-        width: 350px
-    }
+    right: 0px;
 }
 
 .sidebar-small {

@@ -539,7 +539,7 @@ h2 {
       width: 1200px;
       padding-right: 35rem; } }
 
-.brand-text h1 {
+.brand-text .h1 {
   font-weight: 400;
   font-size: 2.25rem;
   margin: 0 0 28px;
@@ -1635,25 +1635,24 @@ header {
 /* ================================= 
             Slide-Out Styles
 ==================================== */
-#sidebar {
+.sidebar {
   position: fixed;
   top: 0;
-  right: 0px;
+  right: -275px;
   height: 100%;
   background-color: #333645;
   overflow: auto;
-  transition: 0.5s; }
-
-.sidebar {
+  transition: 0.5s;
   z-index: -1;
-  width: 0px; }
+  width: 275px; }
+  @media screen and (min-width: 992px) {
+    .sidebar {
+      right: -350px;
+      width: 350px; } }
 
 .sidebar-active {
-  width: 275px;
-  z-index: 5; }
-  @media screen and (min-width: 992px) {
-    .sidebar-active {
-      width: 350px; } }
+  z-index: 5;
+  right: 0px; }
 
 .sidebar-small {
   padding: 21px; }
@@ -2017,7 +2016,7 @@ table td {
   padding: 15px;
   min-height: 20px; }
 
-.cookie-settings table thead tr th {
+.cookie-settings table .th {
   background-color: #aaa;
   color: #fff;
   padding: 16px;

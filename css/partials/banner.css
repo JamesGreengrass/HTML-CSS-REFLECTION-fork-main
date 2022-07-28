@@ -23,7 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: clip; }
+  overflow: hidden; }
 
 .ti01 {
   background-image: linear-gradient(285deg, transparent 25%, black), url(../../assets/img/ti01.webp); }

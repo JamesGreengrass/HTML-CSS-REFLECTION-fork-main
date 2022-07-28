@@ -43,8 +43,7 @@ body {
 
 header {
   display: block;
-  background-color: #fff;
-  padding-top: 20px; }
+  background-color: #fff; }
 
 .btn {
   display: inline-block;
@@ -221,7 +220,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: clip; }
+  overflow: hidden; }
 
 .ti01 {
   background-image: linear-gradient(285deg, transparent 25%, black), url(../../assets/img/ti01.webp); }
@@ -1782,40 +1781,29 @@ header {
 .sidebar-small ul li ul li:not(:first-child) a {
   border-top: 1px solid rgba(255, 255, 255, 0.05); }
 
-/* ================================= 
-  Important Styles - Styles.scss
-==================================== */
-*, :after, :before {
-  box-sizing: border-box; }
-
-.pull-left {
-  float: left !important; }
-
-.pull-right {
-  float: right !important; }
-
-body {
-  overflow-x: hidden;
-  background-color: white; }
-
-#main {
-  z-index: 2;
-  position: relative;
-  background-color: #fff;
+.main-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
-  transition: right .5s; }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer; }
 
-.main {
-  right: 0px; }
-
-.main-active {
-  right: 275px;
-  cursor: pointer;
+.main-overlay.active {
+  display: block;
   overflow-y: hidden; }
-  @media screen and (min-width: 992px) {
-    .main-active {
-      right: 350px; } }
 
+/* ================================= 
+  Mixins - Mixins.scss
+==================================== */
+/* ================================= 
+            Cookie Styles
+==================================== */
 .cookie-consent {
   position: fixed;
   top: 0;
@@ -2020,9 +2008,11 @@ table td {
   background-color: #aaa;
   color: #fff;
   padding: 16px;
+  padding-right: 124px;
   text-align: left;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  width: 50px; }
 
 .table-buttons {
   display: flex;
@@ -2049,25 +2039,42 @@ table td {
 #settings.active {
   visibility: visible; }
 
+/* ================================= 
+  Important Styles - Styles.scss
+==================================== */
+*, :after, :before {
+  box-sizing: border-box; }
+
+.pull-left {
+  float: left !important; }
+
+.pull-right {
+  float: right !important; }
+
+body {
+  overflow-x: hidden;
+  background-color: white; }
+
+#main {
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+  transition: right .5s; }
+
+.main {
+  right: 0px; }
+
+.main-active {
+  right: 275px;
+  cursor: pointer;
+  overflow-y: hidden; }
+  @media screen and (min-width: 992px) {
+    .main-active {
+      right: 350px; } }
+
 .animate__animated.animate__slideInDown {
   --animate-duration: 0.2s; }
 
 .animate__animated.animate__slideOutUp {
   --animate-duration: 0.2s; }
-
-.main-overlay {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  cursor: pointer; }
-
-.main-overlay.active {
-  display: block;
-  overflow-y: hidden; }

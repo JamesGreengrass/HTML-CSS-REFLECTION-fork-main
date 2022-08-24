@@ -267,48 +267,9 @@
             <div class="main" id="main">
                 <div class="main-overlay" id="main-overlay"></div>
                 <!-- HTML for header -->
-                <header class="animate__animated">
-                    <div class="container">
-                        <a href="#" id="logo-a">
-                            <img src="assets/img/f-logo.png" alt="Netmatters Logo" class="logo">
-                        </a>
-                        <a class="btn btn-s">
-                            <span class="pull-left icon-mouse"></span>
-                            Support
-                        </a>
-                        <a class="btn btn-c">
-                            <span class="pull-left icon-paperplane"></span>
-                            Contact
-                        </a>
-                        <form class="search-bar">
-                            <input class="search-bar-input" type="search" placeholder="Search..." aria-label="Search">
-                            <button class="search-bar-button" type="submit">
-                                <span class="icon-magnifying-glass">
-                                </span>
-                            </button>
-                        </form>
-                        <div class="unique-container">
-                            <a id="icon-phone" href="#">
-                                <span class="icon-phone_in_talk"></span>
-                            </a>
-                            <button type="button" id="menu-btn" class="btn btn-primary hamburger hamburger--spin" onclick="openNav()">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                                <span class="title">Menu</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="mob-search-container">
-                        <form>
-                            <input class="mob-search-bar-form-control mob-search-bar-form" type="search" placeholder="Search..." aria-label="Search">
-                            <button class="mob-search-button" type="submit">
-                                <span class="icon-magnifying-glass">
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                
+                <?php
+                include ('php/header.php');
+                ?>
                     <!-- HTML for main navigation -->
                     <div class="main-navigation">
                         <div class="bar-container">
@@ -986,112 +947,9 @@
                     </section>
                 </div>
                 <!-- HTML for the footer -->
-                <footer>
-                    <div class="bar-container">
-                        <div class="footer-row">
-                            <div class="services">
-                                <div class="service">
-                                    <h4>About Netmatters</h4>
-                                    <ul>
-                                        <li>News</li>
-                                        <li>Our Careers</li>
-                                        <li>Our Team</li>
-                                        <li>Privacy Policy</li>
-                                        <li>Cookie Policy</li>
-                                        <li>Terms & Conditions</li>
-                                        <li>Environmental Policy</li>
-                                        <li>Contact Us</li>
-                                    </ul>
-                                </div>
-                                <div class="service">
-                                    <h4>Our Services</h4>
-                                    <ul>
-                                        <li>Bespoke Software</li>
-                                        <li>IT Support</li>
-                                        <li>Digital Marketing</li>
-                                        <li>Telecoms Services</li>
-                                        <li>Web Design</li>
-                                        <li>Cyber Security</li>
-                                        <li>Developer Training</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="offices">
-                                <div class="office">
-                                    <h4>Cambridge Office</h4>
-                                    <ul>
-                                        <li>Unit 1.28,</li>
-                                        <li>St John's Innovation Centre,</li>
-                                        <li>Cowley Road, Milton,</li>
-                                        <li>Cambridge,</li>
-                                        <li>CB4 0WS</li>
-                                        <li>&nbsp;</li>
-                                        <li>
-                                            Tel:
-                                            <a href="#">01223 37 57 72</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="office">
-                                    <h4>Wymondham Office</h4>
-                                    <ul>
-                                        <li>Unit 15,</li>
-                                        <li>Penfold Drive,</li>
-                                        <li>Gateway 11 Business Park,</li>
-                                        <li>Wymondham, Norfolk,</li>
-                                        <li>NR18 0WZ</li>
-                                        <li>&nbsp;</li>
-                                        <li>Tel:
-                                            <a href="#">01603 70 40 20</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="office">
-                                    <h4>Great Yarmouth Office</h4>
-                                    <ul>
-                                        <li>Suite F23,</li>
-                                        <li>Beacon Innovation Centre,</li>
-                                        <li>Beacon Park, Gorleston,</li>
-                                        <li>Great Yarmouth, Norfolk,</li>
-                                        <li>NR31 7RA</li>
-                                        <li>&nbsp;</li>
-                                        <li>
-                                            Tel:
-                                            <a href="#">01493 60 32 04</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom footer-container">
-                        <div class="license">
-                            © Copyright Netmatters Ltd. 2022.
-                            <br class="visible-xs">
-                            All rights reserved.
-                            <span>-</span>
-                            <ul>
-                                <li>
-                                    <a href="#">Sitemap</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="social-media">
-                            <a href="#" id="fb">
-                                <span class="icon-facebook"></span>
-                            </a>
-                            <a href="#" id="tw">
-                                <span class="icon-twitter"></span>
-                            </a>
-                            <a href="#" id="ig">
-                                <span class="icon-instagram"></span>
-                            </a>
-                            <a href="#" id="in">
-                                <span class="icon-indeed"></span>
-                            </a>
-                        </div>
-                    </div>
-                </footer>
+                <?php
+                include ('php/footer.php')
+                ?>
                 <!-- HTML for the accreditations -->
                 <div class="accreditations">
                     <div class="bar-container">

@@ -18,6 +18,10 @@
     </head>
 
     <body>
+        <?php
+        include("inc/functions.php");
+        $news = full_news_array();
+        ?>
         <div id="body">
             <!-- HTML for cookie app -->
             <div id="cookie-app">

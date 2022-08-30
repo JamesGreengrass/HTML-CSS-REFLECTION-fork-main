@@ -1,0 +1,54 @@
+// Imports
+
+@import 'mixins.scss',
+        'variables.scss';
+
+/* ================================= 
+            Contact Page Styles
+==================================== */
+
+.breadcrumb-container {
+    box-shadow: 0 5px 35px #0000001a;
+    padding: 14px 0 13px;
+    @include mQMax(767px) {
+        display: none;
+    }
+    @include mQMax(991px) {
+        border-top: 1px solid $bgcolorprimary;
+    }
+}
+
+.breadcrumb {
+    padding: 8px 0px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #71737d;
+    border-radius: 2px;
+}
+
+.breadcrumb {
+    background: none;
+    color: $bgcolorprimary;
+    font-size: 0.8125rem;
+    margin: 0px;
+    padding: 0px;
+    @include mQMax(767px) {
+        display: none;
+    }
+}
+
+.breadcrumb > li {
+    display: inline-block;
+}
+
+.breadcrumb-container .breadcrumb a {
+    font-weight: 700;
+}
+
+.breadcrumb-container .breadcrumb > li,
+.breadcrumb-container .breadcrumb > li > a {
+    @include mQMax(991px) {
+    color: $bgcolorprimary;
+    }
+}
+

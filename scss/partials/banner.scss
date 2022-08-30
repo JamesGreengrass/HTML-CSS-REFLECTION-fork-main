@@ -104,7 +104,43 @@
     background-color: #566C88;
     border-color: #566C88;
 }
-  
+
+.btn-s-three {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+}
+
+.btn-s-three:hover {
+    color: $white;
+    background-color: $dblue;
+    border-color: $dblue;
+}
+
+.btn-dm:hover {
+    color: $white;
+    background-color: $ddgreen;
+    border-color: $ddgreen;
+}
+
+.btn-t:hover {
+    color: $white;
+    background-color: $ddred;
+    border-color: $ddred;
+}
+
+.btn-wd:hover {
+    color: $white;
+    background-color: $ddpurple;
+    border-color: $ddpurple;
+}
+
+.btn-cs:hover {
+    color: $white;
+    background-color: $ddpink;
+    border-color: $ddpink;
+}
+
 .icon-arrow-right{
     line-height: 56px;
     vertical-align: middle;

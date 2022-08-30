@@ -18,10 +18,6 @@
     </head>
 
     <body>
-        <?php
-        include("inc/functions.php");
-        $news = full_news_array();
-        ?>
         <div id="body">
             <!-- HTML for cookie app -->
             <div id="cookie-app">
@@ -275,275 +271,7 @@
                 include ('php/header.php');
                 ?>
                     <!-- HTML for main navigation -->
-                    <div class="main-navigation">
-                        <div class="bar-container">
-                            <ul>
-                                <li class="software">
-                                    <a href="#">
-                                        <span class="icon-apps"></span>
-                                        <small>Bespoke</small>
-                                        Software
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Workflow
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Automation
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Integration
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Database
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Sharepoint
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Management
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Navision
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="it">
-                                    <a href="#">
-                                        <span class="icon-monitor"></span>
-                                        <small>IT</small>
-                                        Support
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Managed IT
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Business IT
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Office 365
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Consultancy
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Cloud Provider
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Data Backup
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="digital">
-                                    <a href="#">
-                                        <span class="icon-bars"></span>
-                                        <small>Digital</small>
-                                        Marketing
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Search (SEO)
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Paid (PPC)
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Conversion (CRO)
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Email
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Social Media
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Content
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="telecoms">
-                                    <a href="#">
-                                        <span class="icon-phone_in_talk"></span>
-                                        <small>Telecoms</small>
-                                        Services
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Business Mobile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Hosted Voip
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Business Voip
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Business Brpadband
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Leased Line
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                3CX Systems
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="web">
-                                    <a href="#">
-                                        <span class="icon-code"></span>
-                                        <small>Web</small>
-                                        Design
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Stylish Websites
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Ecommerce Stores
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Branding
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Apps
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Web Hosting
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Pay Monthly Websites
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="security">
-                                    <a href="#">
-                                        <span class="icon-security"></span>
-                                        <small>Cyber</small>
-                                        Security
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Assessment
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Management
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Penetration Testing
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Cyber Essentials
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                PCI/DSS
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Hacker Prevention
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="developer-course">
-                                    <a href="#">
-                                        <span class="icon-school"></span>
-                                        <small>Developer</small>
-                                        Training
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#" >
-                                                Train For A Career In Tech
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Scion Scheme Frequently Asked Questions
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Scion Collaborators
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <?php include('php/main-navigation.php'); ?>
                 </header>
                 <!-- HTML for banner -->
                 <div class="banner">
@@ -571,7 +299,7 @@
                                     <br>
                                     services for your business.
                                 </p>
-                                <a href="#" class="btn btn-s-two btn-lg">
+                                <a href="#" class="btn btn-s-three btn-lg">
                                     Find out more
                                     <span class="icon-arrow-right">
                                     </span>
@@ -587,7 +315,7 @@
                                     results-driven marketing activities.
                                 </p>
                                 <a href="#" class="btn btn-dm btn-lg">
-                                    Find out more
+                                    See how we can help you
                                     <span class="icon-arrow-right">
                                     </span>
                                 </a>
@@ -747,99 +475,100 @@
                                 <div class="bar-container">
                                     <div class="article-list-flex">
                                         <div class="article-box" id="abox-one">
-                                            <a href="#" class="category" title="View all: Web Design / News"> News </a>
+                                            <a href="#" class="category" title="View all: Web Design / News"> <?php include ('php/inc/functions.php'); 
+                                            single_news_array(1, "type"); ?> </a>
                                             <div class="img-hover-zoom">
                                                 <a>
-                                                    <img src="assets/img/scs-graduates-march-e5Cg.webp" alt="SCS Graduates March">
+                                                    <img src="<?php single_news_array(1, "img"); ?>" alt="March Graduates Image">
                                                 </a>
                                             </div>
                                             <div class="article block ar">
                                                 <h3>
-                                                    <a href="#">SCS Graduates March 2022</a>
+                                                    <a href="#"><?php single_news_array(1, "title"); ?></a>
                                                 </h3>
                                                 <p>
-                                                    At Netmatters we found that there was a growing gap in the tech industry for talented individuals. W...
+                                                    <?php single_news_array(1, "description"); ?>
                                                 </p>
                                                 <a class="btn btn-wd" href="#">
                                                     Read More
                                                 </a>
                                                 <div class="user">
                                                     <div class="avatar">
-                                                        <img src="assets/img/avatar.webp" alt="Netmatters Logo">
+                                                        <img src="<?php single_news_array(1, "user_img"); ?>" alt="Netmatters Logo">
                                                     </div>
                                                     <div class="details">
                                                         <p>
                                                             <b class="d-text">
-                                                                Posted by Netmatters Ltd
+                                                                Posted by <?php single_news_array(1, "user"); ?>
                                                             </b>
                                                             <br>
-                                                            7th April 2022
+                                                            <?php single_news_array(1, "date_posted"); ?>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="article-box" id="abox-two">
-                                            <a href="#" class="category" title="View all: Web Design / News"> News </a>
+                                            <a href="#" class="category" title="View all: Web Design / News"> <?php single_news_array(2, "type"); ?> </a>
                                             <div class="img-hover-zoom">
                                                 <a>
-                                                    <img src="assets/img/march-notables-2022-1R6Z.webp" alt="March Notables 2022">
+                                                    <img src="<?php single_news_array(2, "img"); ?>" alt="March Notables 2022">
                                                 </a>
                                             </div>
                                             <div class="article block ar">
                                                 <h3>
-                                                    <a href="#">March Notables 2022</a>
+                                                    <a href="#"><?php single_news_array(2, "title"); ?></a>
                                                 </h3>
                                                 <p>
-                                                    Every month, we take great pleasure in celebrating the success of our notable employees. Across all...
+                                                    <?php single_news_array(2, "description"); ?>
                                                 </p>
                                                 <a class="btn btn-wd" href="#">
                                                     Read More
                                                 </a>
                                                 <div class="user">
                                                     <div class="avatar">
-                                                        <img src="assets/img/avatar.webp" alt="Netmatters Logo">
+                                                        <img src="<?php single_news_array(2, "user_img"); ?>" alt="Netmatters Logo">
                                                     </div>
                                                     <div class="details">
                                                         <p>
                                                             <b class="d-text">
-                                                                Posted by Netmatters Ltd
+                                                                Posted by <?php single_news_array(2, "user"); ?>
                                                             </b>
                                                             <br>
-                                                            6th April 2022
+                                                            <?php single_news_array(2, "date_posted"); ?>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="article-box" id="abox-three">
-                                            <a href="#" class="category" title="View all: Web Design / News"> News </a>
+                                            <a href="#" class="category" title="View all: Web Design / News"> <?php single_news_array(3, "type"); ?> </a>
                                             <div class="img-hover-zoom">
                                                 <a>
-                                                    <img src="assets/img/jimmy-wright-achieves-86HD.webp" alt="Jimmy Wright Article">
+                                                    <img src="<?php single_news_array(3, "img"); ?>" alt="Jimmy Wright Article">
                                                 </a>
                                             </div>
                                             <div class="article block ar">
                                                 <h3>
-                                                    <a href="#">Jimmy Wright Achieves The Long Service Award</a>
+                                                    <a href="#"><?php single_news_array(3, "title"); ?></a>
                                                 </h3>
                                                 <p>
-                                                    From Trainee to Legend... We feel it is important to congratulate our team...
+                                                    <?php single_news_array(3, "description"); ?>
                                                 </p>
                                                 <a class="btn btn-wd" href="#">
                                                     Read More
                                                 </a>
                                                 <div class="user">
                                                     <div class="avatar">
-                                                        <img src="assets/img/avatar.webp" alt="Netmatters Logo">
+                                                        <img src="<?php single_news_array(3, "user_img"); ?>" alt="Netmatters Logo">
                                                     </div>
                                                     <div class="details">
                                                         <p>
                                                             <b class="d-text">
-                                                                Posted by Netmatters Ltd
+                                                                Posted by <?php single_news_array(3, "user"); ?>
                                                             </b>
                                                             <br>
-                                                            4th April 2022
+                                                            <?php single_news_array(3, "date_posted"); ?>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -952,7 +681,7 @@
                 </div>
                 <!-- HTML for the footer -->
                 <?php
-                include ('php/footer.php')
+                include ('php/footer.php');
                 ?>
                 <!-- HTML for the accreditations -->
                 <div class="accreditations">

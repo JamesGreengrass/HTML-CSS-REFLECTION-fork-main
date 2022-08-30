@@ -1,8 +1,7 @@
-
-<header class="header animate__animated">
+<header class="header-otp">
     <div class="container">
         <a href="#" id="logo-a">
-            <img src="assets/img/f-logo.png" alt="Netmatters Logo" class="logo">
+            <img src="../assets/img/f-logo.png" alt="Netmatters Logo" class="logo">
         </a>
         <a class="btn btn-s">
             <span class="pull-left icon-mouse"></span>

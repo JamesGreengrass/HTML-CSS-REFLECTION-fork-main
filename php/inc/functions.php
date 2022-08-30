@@ -16,18 +16,21 @@ function full_news_array() {
     }
 }
 
-function single_news_array($id) {
+function single_news_array($id, $column) {
     include("connection.php");
 
     try {
-        $results = $db->prepare("SELECT * FROM `database-news` WHERE id = $id");
+        $results = $db->prepare("SELECT $column FROM `database-news` WHERE id = $id");
         $results->execute();
         $results->setFetchMode(PDO::FETCH_ASSOC);
-        $news = $results->fetchAll();
-        echo "Retrieved results";
-        print_r($news);
+        $news = $results->fetch();
+        //echo "Retrieved results";
+        foreach($news as $key => $value) { 
+            echo $value; 
+        }
     } catch (Exception $e) {
-        echo "Unable to retrieve results";
+        echo "Unable to retrieve results. Error: ";
+        echo $e->getMessage();
         exit;
     }
 }

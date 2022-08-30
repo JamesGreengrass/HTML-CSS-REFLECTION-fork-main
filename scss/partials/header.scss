@@ -7,11 +7,15 @@
             Header Styles
 ==================================== */
 
-header {
+.header {
     position: fixed;
     transition: all 0.5s ease;
     z-index: 4;
     width: 100%;
+}
+
+.header-otp {
+    position: relative;
 }
 
 .container {

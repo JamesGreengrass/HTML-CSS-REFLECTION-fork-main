@@ -25,7 +25,7 @@
             </header>
             <div id="middle">
                 <div class="breadcrumb-container">
-                    <div class="container">
+                    <div class="container container-bread">
                         <ul class="breadcrumb">
                             <li>
                                 <a href="#">Home</a>
@@ -34,8 +34,245 @@
                         </ul>
                     </div>
                 </div>
-                <div class="section-top">
-                    
+                <div class="section top">
+                    <div class="page-head">
+                        <div class="container container-cp">
+                            <h1>Our Offices</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-addresses">
+                    <div class="service-list container-cp">
+                        <div class="row">
+                            <div class="col-md-4 spacer-sm">
+                                <div class="block address address-cambridge">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="" alt="Cambridge Office" class="img-full">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="h2">
+                                            <a href="#"> Cambridge Office </a>
+                                        </p>
+                                        <p class="p">
+                                            " Unit 1.31, "
+                                            <br>
+                                            " St John's Innovation Centre, "
+                                            <br>
+                                            " Cowley Road, Milton, "
+                                            <br>
+                                            " Cambridge, "
+                                            <br>
+                                            " CB4 0WS "
+                                        </p>
+                                        <div class="tel">
+                                            <a href="tel:01223375772" class="h3 text-web"> 012233 37 57 72 </a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a href="#" class="btn btn-wb">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 spacer-sm">
+                                <div class="block address address-wymondham">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="" alt="Wymondham Office" class="img-full">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="h2">
+                                            <a href="#"> Wymondham Office </a>
+                                        </p>
+                                        <p class="p">
+                                            " Unit 15, "
+                                            <br>
+                                            " Penfold Drive, "
+                                            <br>
+                                            " Gateway 11 Business Park, "
+                                            <br>
+                                            " Wymondham, Norfolk "
+                                            <br>
+                                            " NR18 0WZ "
+                                        </p>
+                                        <div class="tel">
+                                            <a href="tel:01603704020" class="h3 text-web"> 01603 70 40 20 </a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a href="#" class="btn btn-wb">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block address address-yarmouth">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="" alt="Great Yarmouth Office" class="img-full">
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <p class="h2">
+                                            <a href="#"> Great Yarmouth Office </a>
+                                        </p>
+                                        <p class="p">
+                                            " Suite F23, "
+                                            <br>
+                                            " Beacon Innovation Centre, "
+                                            <br>
+                                            " Beacon Park, Gorleston, "
+                                            <br>
+                                            " Great Yarmouth, Norfolk "
+                                            <br>
+                                            " NR31 7RA "
+                                        </p>
+                                        <div class="tel">
+                                            <a href="tel:01493603204" class="h3 text-web"> 01493 60 32 04 </a>
+                                        </div>
+                                        <div class="view-more">
+                                            <a href="#" class="btn btn-wb">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section bottom container">
+                    <div class="row">
+                        <div class="col-lg-4 col-lg-push-8">
+                            <div>
+                                <div class="cms-block" id="partial-79391">
+                                    <p>
+                                        <strong>Email us on:</strong>
+                                        <br>
+                                    </p>
+                                    <p>
+                                       <a href="mailto:sales@netmatters.com" class="h3 text-web">sales@netmatters.com</a> 
+                                    </p>
+                                    <p>
+                                        <strong>Business hours:</strong>
+                                    </p>
+                                    <p>
+                                        <strong>Monday - Friday 07:00 - 18:00&nbsp;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="cms-block" id="partial-79394">
+                                    <div class="container">
+                                        <div class="accordion out-of-hours">
+                                            <div class="question out-of-hours">
+                                                <h4>
+                                                    <a href="#">
+                                                        <p class="question-text">
+                                                            "Out of Hours IT Support"
+                                                            <span>INSERT ICON</span>
+                                                        </p>
+                                                    </a>
+                                                </h4>
+                                                <div class="answer initiallyHidden">
+                                                    <p>
+                                                        "Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks."
+                                                    </p>
+                                                    <p>
+                                                        <strong>Monday - Friday 18:00 - 22:00</strong>
+                                                        <strong>Saturday 08:00 - 16:00</strong>
+                                                        <br>
+                                                        <strong>Sunday 10:00 - 18:00</strong>
+                                                    </p>
+                                                    <p>
+                                                        "To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp; "
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-lg-pull-4">
+                            <form method="POST" action="https://www.netmatters.co.uk/enquiry#contact-form" accept-charset="UTF-8" id="contact-form" novalidate="novalidate">
+                                <input name="_token" type="hidden" value="dNGJ7nrpfJ7InO0x1a3GDKmpnfI6kW1RT5Etx95D">
+                                <input name="link" type="hidden" value="https://www.netmatters.co.uk/contact-us">
+                                <input name="referrer" type="hidden" value="https://www.netmatters.co.uk/">
+                                <input name="return_url" type="hidden" value="https://www.netmatters.co.uk/contact-us/success#contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="required">
+                                                Your Name
+                                            </label>
+                                            <input class="form-control" name="name" type="text" value id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="company" class>
+                                                Company Name
+                                            </label>
+                                            <input class="form-control" name="company" type="text" value id="company">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="required">
+                                                Your Email
+                                            </label>
+                                            <input class="form-control" name="email" type="email" value id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="telephone" class="required">
+                                                Your Telephone Number
+                                            </label>
+                                            <input class="form-control" name="telephone" type="text" value id="telephone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="subject" class="required">
+                                                Subject
+                                            </label>
+                                            <input class="form-control" name="subject" type="text" id="subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="required">
+                                        Message
+                                    </label>
+                                    <textarea class="form-control" name="message" cols="50" rows="10" id="message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="pretty-checkbox">
+                                        <span class="media">
+                                            <span class="media-left checkbox-left">
+                                                <input type="checkbox">
+                                                <span class="button"></span>
+                                            </span>
+                                            <span class="media-body">
+                                                Please tick this box if you wish to receive marketing information from us. 
+                                                Please see our
+                                                <a href="#" target="_blank">Privacy Policy</a>
+                                                for more information on how we use your data.
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="action-block">
+                                    <button name="submit" class="btn btn-wd"> Send Enquiry </button>
+                                    <small class="helper-text">
+                                        <span class="text-danger">*</span>
+                                        Fields Required
+                                    </small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <section>
                     <div class="newsletter-bg">

@@ -18,6 +18,10 @@
     }
 }
 
+.container-bread {
+    padding: 0px 15px;
+}
+
 .breadcrumb {
     padding: 8px 0px;
     margin-bottom: 20px;
@@ -52,3 +56,77 @@
     }
 }
 
+.breadcrumb>li+li:before {
+    content: "/\A0";
+    padding: 0 5px;
+    color: $bgcolorprimary;
+}
+
+.top {
+    padding-bottom: 0px;
+}
+ 
+.page-head {
+    @include mQMax(991px) {
+        background-color: $bgcolorprimary;
+        margin-top: -50px;
+        padding: 24px 0px;
+    }
+}
+
+.page-head:not(.bottom) {
+    @include mQMax(991px) {
+        margin-bottom: 50px;
+    }
+}
+
+.container-cp {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-cp h1 {
+    line-height: 1.1;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 2.25rem;
+    max-width: 750px;
+    margin: 0 0 28px;
+    color: $bgcolorprimary;
+    @include mQMax(991px) {
+        color: #fff;
+        margin: 0px;
+    }
+}
+
+.office-addresses {
+    margin-bottom: 40px;
+}
+
+.service-list {
+    margin-top: 20px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mQ(992px) {
+        float: left;
+        width: 33.33333333%;
+    }
+}
+
+.spacer-sm {
+    @include mQMax(991px) {
+        margin-bottom: 30px;
+    }
+}
